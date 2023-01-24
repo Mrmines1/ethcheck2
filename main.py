@@ -3,7 +3,7 @@ from web3 import Web3
 from eth_account import Account
  
 wss = "wss://mainnet.infura.io/ws/v3/ec724d83ec874a63996f570e0c797806"
-w3 = Web3(Web3.WebsocketsProvider(wss))
+w3 = Web3(Web3.WebsocketProvider(wss))
  
 def check_balance(address):
     balance = w3.eth.getBalance(address)
